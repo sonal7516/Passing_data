@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="background-color:cadetblue">Passing data using View_Bag</h2>
+
+<h3>Message: @ViewBag.msg</h3>
+
+<h2>Employees</h2>
+
+@foreach (var emp in ViewBag.employees)
+{
+    <li>@emp</li>
+}
+
+

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Passing_data.Controllers.EmployeeController>
+@{
+    ViewBag.Title = "View_Data";
+}
+
+<h2 style="background-color:cadetblue">Passing data using View_Data</h2>
+
+<h3>Message: @ViewData["msg"]</h3>
+
+@foreach (var emp in (List<string>)ViewData["msg"])
+{
+    <li>@emp</li>
+}
